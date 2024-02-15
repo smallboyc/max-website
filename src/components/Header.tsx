@@ -26,7 +26,7 @@ export default function Header() {
         <ul className="hidden sm:flex items-center gap-5">
           <Navigation />
         </ul>
-        <FaLanguage className={`block size-7`} />
+        <FaLanguage className={`block size-7 -translate-x-4 sm:translate-x-0`} />
         <div onClick={() => setToggle(!toggle)} className="block sm:hidden">
           <ImCross
             className={classNames(
@@ -41,7 +41,7 @@ export default function Header() {
       <ul
         className={classNames(
           toggle
-            ? "transform: translate-y-5 ease-out duration-700 z-10 "
+            ? "transform: translate-y-3 ease-out duration-700 z-10 "
             : "transform: -translate-y-80 ease-in duration-700 z-10",
           "relative flex shadow-md py-3 z-20 bg-white sm:hidden justify-center"
         )}
