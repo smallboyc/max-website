@@ -21,7 +21,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/images/favicon.png" />
       </head>
       <body className={roboto.className}>
-        <main className="sm:max-w-[600px] lg:max-w-[700px] mx-auto px-4 md:px-6 py-3  ">
+        <main className="sm:max-w-[600px] lg:max-w-[700px] w-full px-4 mx-auto md:px-6  ">
           <Header />
           {children}
         </main>

@@ -12,8 +12,8 @@ const size_main_logo = 60;
 export default function Header() {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="sticky top-0 z-20 h-12">
-      <nav className=" flex justify-between items-center gap-3">
+    <header className="sticky top-0 z-20 h-16 bg-white py-5">
+      <nav className=" flex justify-between items-center gap-3 ">
         {" "}
         <Link href="/">
           <Image
@@ -26,7 +26,9 @@ export default function Header() {
         <ul className="hidden sm:flex items-center gap-5">
           <Navigation />
         </ul>
-        <FaLanguage className={`block size-7 -translate-x-4 sm:translate-x-0`} />
+        <FaLanguage
+          className={`block size-7 -translate-x-4 sm:translate-x-0`}
+        />
         <div onClick={() => setToggle(!toggle)} className="block sm:hidden">
           <ImCross
             className={classNames(
