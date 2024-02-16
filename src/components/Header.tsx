@@ -2,14 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaLanguage } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
 import Navigation from "./Navigation";
+import ToggleLanguage from "./ToggleLanguage";
 import classNames from "classnames";
 
 const size_main_logo = 60;
 
-export default function Header() {
+export default function Header({ locale }: { locale: string }) {
+  console.log(locale);
   const [toggle, setToggle] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -42,11 +43,9 @@ export default function Header() {
           />
         </Link>
         <ul className="hidden sm:flex items-center gap-5">
-          <Navigation />
+          <Navigation locale={locale} />
         </ul>
-        <FaLanguage
-          className={`block size-7 -translate-x-4 sm:translate-x-0`}
-        />
+        <ToggleLanguage locale={locale} />
         <div onClick={() => setToggle(!toggle)} className="block sm:hidden">
           <ImCross
             className={classNames(
@@ -67,7 +66,7 @@ export default function Header() {
         )}
         onClick={() => setToggle(!toggle)}
       >
-        <Navigation />
+        <Navigation locale={locale} />
       </ul>
     </header>
   );

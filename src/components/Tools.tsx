@@ -6,6 +6,7 @@ import { SiVisualstudiocode } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { MdArrowOutward } from "react-icons/md";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const tools = [
   { id: 0, icon: SiBlender, name: "Blender", href: "https://www.blender.org/" },
@@ -27,10 +28,11 @@ const tools = [
 ];
 
 export default function Tools() {
+  const t = useTranslations("home.tools");
   return (
     <section>
       {" "}
-      <h1 className="text-2xl">Tools</h1>
+      <h1 className="text-2xl">{t("title")}</h1>
       <div className="mt-5 grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4">
         {tools.map((tool) => (
           <Link
@@ -45,7 +47,7 @@ export default function Tools() {
         ))}
       </div>
       <p className="mt-6 text-slate-600">
-        More details on my{" "}
+        {t("more")}
         <span className="text-black font-semibold">curiculum vitae.</span>
       </p>
     </section>

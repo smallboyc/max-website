@@ -1,0 +1,38 @@
+{
+  "home": {
+    "navigation": {
+      "home": "Accueil",
+      "projects": "Projets",
+      "blog": "Blog"
+    },
+    "hero": {
+      "basically": "Je fais de la 3D et du code.",
+      "yo": "ans",
+      "nationality": "Français",
+      "status": "Etudiant en école d'ingénieurs",
+      "desc_1": "Salut ! Moi c'est Max.",
+      "desc_2": "Je suis passionné par la création digitale.",
+      "desc_3": "Entre le développement, la 3D, la vidéo ou en encore l'animation,",
+      "desc_4": "J'aime donner vie à mes idées à travers différentes technologies."
+    },
+    "tools": {
+      "title": "J'utilise",
+      "more": "Plus de détails sur mon "
+    },
+    "education": {
+      "title": "Éducation",
+      "esiee": "Étudiant et ingénieur créatif à l'IMAC.",
+      "nantes": "Classe préparatoire en physique et mathématiques.",
+      "anywwwhere": "Développeur Front-End dans une entreprise Française."
+    },
+    "links": {
+      "title": "Liens"
+    }
+  },
+  "projects": {
+    "header": {
+      "title": "Projets",
+      "description": "Découvrez mes projets."
+    }
+  }
+}

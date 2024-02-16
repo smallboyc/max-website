@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
+import { useTranslations } from "next-intl";
 
 const educations = [
   {
@@ -10,7 +11,7 @@ const educations = [
     width: 160,
     height: 100,
     time: "2023 - 2026",
-    description: "Engineering creative student in IMAC schooling.",
+    description: "esiee",
     margin: true,
   },
   {
@@ -20,7 +21,7 @@ const educations = [
     width: 180,
     height: 100,
     time: "2020 - 2023",
-    description: "Preparatory class in physical & math science.",
+    description: "nantes",
     margin: false,
   },
   {
@@ -29,16 +30,17 @@ const educations = [
     src: "/images/anywwwhere.svg",
     width: 160,
     height: 100,
-    time: "2023 - Today",
-    description: "Front-End developer in a French company.",
+    time: "2023 - ?",
+    description: "anywwwhere",
     margin: true,
   },
 ];
 
 export default function Education() {
+  const t = useTranslations("home.education");
   return (
     <section>
-      <h1 className="text-2xl">Education</h1>{" "}
+      <h1 className="text-2xl">{t("title")}</h1>{" "}
       <div className="mt-10 flex flex-col gap-10">
         {educations.map((education) => (
           <div
@@ -68,7 +70,7 @@ export default function Education() {
             >
               <p className="text-lg">{education.time}</p>
               <p className="text-slate-600 hover:text-black">
-                {education.description}
+                {t(education.description)}
               </p>
             </span>
           </div>
