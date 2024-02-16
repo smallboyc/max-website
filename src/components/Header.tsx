@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaLanguage } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
 import Navigation from "./Navigation";
@@ -11,9 +11,27 @@ const size_main_logo = 60;
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 60) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-20 h-16 bg-white py-5">
-      <nav className=" flex justify-between items-center gap-3 ">
+    <header
+      className={classNames(
+        shadow ? "shadow-md " : "",
+        "sticky top-0 z-20 h-16 bg-white py-4  duration-200 ease-in"
+      )}
+    >
+      <nav className=" flex justify-between items-center gap-3 max-w-container">
         {" "}
         <Link href="/">
           <Image
@@ -43,9 +61,9 @@ export default function Header() {
       <ul
         className={classNames(
           toggle
-            ? "transform: translate-y-3 ease-out duration-700 z-10 "
+            ? "transform: translate-y-2 ease-out duration-700 z-10 "
             : "transform: -translate-y-80 ease-in duration-700 z-10",
-          "relative flex shadow-md py-3 z-20 bg-white sm:hidden justify-center"
+          "relative flex shadow-md py-3 z-20 bg-white sm:hidden justify-center max-w-container"
         )}
         onClick={() => setToggle(!toggle)}
       >

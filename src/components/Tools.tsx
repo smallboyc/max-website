@@ -30,7 +30,7 @@ export default function Tools() {
   return (
     <section>
       {" "}
-      <h1 className="text-2xl">I use</h1>
+      <h1 className="text-2xl">Tools</h1>
       <div className="mt-5 grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4">
         {tools.map((tool) => (
           <Link
@@ -46,7 +46,7 @@ export default function Tools() {
       </div>
       <p className="mt-6 text-slate-600">
         More details on my{" "}
-        <span className="text-black font-bold">curiculum vitae.</span>
+        <span className="text-black font-semibold">curiculum vitae.</span>
       </p>
     </section>
   );

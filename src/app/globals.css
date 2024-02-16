@@ -1,3 +1,9 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .max-w-container {
+    @apply sm:max-w-[600px] lg:max-w-[700px] w-full px-4 mx-auto md:px-6;
+  }
+}
