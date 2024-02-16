@@ -30,9 +30,15 @@
     }
   },
   "projects": {
-    "header": {
+    "main_title": {
       "title": "Projects",
-      "description": "Discover my projects."
+      "description": "Discover my projects !"
+    }
+  },
+  "blog": {
+    "main_title": {
+      "title": "Blog",
+      "description": "Sometimes I write articles !"
     }
   }
 }
