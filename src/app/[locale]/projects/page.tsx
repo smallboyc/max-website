@@ -8,7 +8,11 @@ export default async function Projects() {
     <main className="my-16 sm:my-20 max-w-container">
       {" "}
       <MainTitle translationElement={"projects.main_title"} />
-      <TemplateProject data={data} />
+      <section className="flex flex-col gap-8">
+        {data.map((project: any) => (
+          <TemplateProject key={project.id} data={project} />
+        ))}
+      </section>
     </main>
   );
 }

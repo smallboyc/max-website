@@ -40,8 +40,8 @@ export default function Education() {
   const t = useTranslations("home.education");
   return (
     <section>
-      <h1 className="text-2xl">{t("title")}</h1>{" "}
-      <div className="mt-10 flex flex-col gap-10">
+      <h1 className="text-2xl font-medium">{t("title")}</h1>{" "}
+      <div className="mt-12 sm:mt-14 flex flex-col gap-16 sm:gap-20">
         {educations.map((education) => (
           <div
             key={education.name}

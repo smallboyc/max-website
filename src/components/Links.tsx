@@ -31,7 +31,7 @@ export default function Links() {
   return (
     <section>
       {" "}
-      <h1 className="text-2xl">{t("title")}</h1>{" "}
+      <h1 className="text-2xl font-medium">{t("title")}</h1>{" "}
       <ul className="flex items-center gap-5 mt-5 ">
         {links.map((link) => (
           <li key={link.name}>

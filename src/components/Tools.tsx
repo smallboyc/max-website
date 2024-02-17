@@ -32,8 +32,8 @@ export default function Tools() {
   return (
     <section>
       {" "}
-      <h1 className="text-2xl">{t("title")}</h1>
-      <div className="mt-5 grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4">
+      <h1 className="text-2xl font-medium">{t("title")}</h1>
+      <div className="mt-10 grid grid-rows-6 sm:grid-rows-3 grid-flow-col gap-4">
         {tools.map((tool) => (
           <Link
             href={tool.href}
