@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import More from "./common/More";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 
@@ -13,6 +14,7 @@ const educations = [
     time: "2023 - 2026",
     description: "esiee",
     margin: true,
+    translate_top: false,
   },
   {
     name: "Nantes University",
@@ -23,6 +25,7 @@ const educations = [
     time: "2020 - 2023",
     description: "nantes",
     margin: false,
+    translate_top: false,
   },
   {
     name: "Anywwwhere",
@@ -33,6 +36,7 @@ const educations = [
     time: "2023 - ?",
     description: "anywwwhere",
     margin: true,
+    translate_top: false,
   },
   {
     name: "Le S Shoes & Style",
@@ -43,6 +47,7 @@ const educations = [
     time: "2023 - ?",
     description: "s_shoes",
     margin: true,
+    translate_top: true,
   },
 ];
 
@@ -62,7 +67,8 @@ export default function Education() {
               href={education.link}
               className={classNames(
                 education.margin ? "ml-3" : "",
-                "flex flex-col justify-center"
+                "flex flex-col justify-center",
+                education.translate_top && "sm:-translate-y-3"
               )}
             >
               <Image
@@ -78,7 +84,7 @@ export default function Education() {
                 "flex flex-col sm:gap-2 ml-3"
               )}
             >
-              <p className="text-lg">{education.time}</p>
+              <p className="text-lg font-medium">{education.time}</p>
               <p className="text-slate-600 hover:text-black">
                 {t(education.description)}
               </p>
@@ -86,6 +92,7 @@ export default function Education() {
           </div>
         ))}
       </div>
+      <More />
     </section>
   );
 }

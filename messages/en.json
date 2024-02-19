@@ -9,15 +9,17 @@
       "basically": "I make 3D and write code.",
       "yo": "years old",
       "nationality": "French",
-      "status": "Engineering school student",
+      "status": "Engineering student",
       "desc_1": "Hi there! I’m Max.",
       "desc_2": "I’m passionate about digital creation.",
       "desc_3": "Between development, 3D, video or animation,",
       "desc_4": "I like to bring my ideas to life through different technologies."
     },
     "tools": {
-      "title": "I use",
-      "more": "more details on my "
+      "title": "I use"
+    },
+    "more": {
+      "content": "More details on my "
     },
     "education": {
       "title": "Education / Experience",

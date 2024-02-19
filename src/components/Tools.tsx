@@ -7,6 +7,7 @@ import { SiGithub } from "react-icons/si";
 import { MdArrowOutward } from "react-icons/md";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import More from "./common/More";
 
 const tools = [
   { id: 0, icon: SiBlender, name: "Blender", href: "https://www.blender.org/" },
@@ -46,10 +47,7 @@ export default function Tools() {
           </Link>
         ))}
       </div>
-      <p className="mt-6 text-slate-600">
-        {t("more")}
-        <span className="text-black font-semibold">curiculum vitae.</span>
-      </p>
+      <More/>
     </section>
   );
 }
