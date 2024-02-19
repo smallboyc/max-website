@@ -10,7 +10,7 @@ export default function MainTitle({
     <div>
       {" "}
       <h1 className="text-3xl font-bold">{t("title")}</h1>
-      <span className="flex gap-2 items-center">
+      <span className="flex gap-2 items-center mt-1">
         <FaArrowRight />
 
         {numberOfElement != 0 ? (
@@ -22,7 +22,9 @@ export default function MainTitle({
               : t("description_plural")}
           </span>
         ) : (
-          <span>{t("no_item")} </span>
+          <span className="text-slate-600 sm:text-lg flex gap-1">
+            {t("no_item")}
+          </span>
         )}
       </span>
       {numberOfElement == 0 && (

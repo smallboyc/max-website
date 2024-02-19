@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
-import { FaFlag } from "react-icons/fa6";
+import { FaArrowRight, FaFlag } from "react-icons/fa6";
 import { LuGraduationCap } from "react-icons/lu";
 import { useTranslations } from "next-intl";
-export default function Hero() {
+import Link from "next/link";
+export default function Hero({ locale }: { locale: string }) {
   const t = useTranslations("home.hero");
   return (
     <section className="flex flex-col">
@@ -18,7 +19,7 @@ export default function Hero() {
           height={120}
           className="rounded-full my-3"
         />
-        <ul className="text-slate-600 sm:text-lg">
+        <ul className="text-slate-600 sm:text-lg flex flex-col mt-3">
           <li className="flex gap-2 items-center mb-2 hover:text-black">
             <LiaBirthdayCakeSolid className="size-5" />
             <span>21 {t("yo")}</span>
@@ -39,6 +40,10 @@ export default function Hero() {
         <p>{t("desc_3")} </p>
         <p>{t("desc_4")}</p>
       </div>
+      <span className="mt-2 flex gap-1 items-center text-slate-600 hover:text-black w-fit">
+        <FaArrowRight className="mr-1" />
+        <Link href={`/${locale}/projects`}>{t("go_to_project")}</Link>
+      </span>
     </section>
   );
 }
