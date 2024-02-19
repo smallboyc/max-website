@@ -6,8 +6,8 @@ import { useTranslations } from "next-intl";
 const educations = [
   {
     name: "ESIEE",
-    link: "https://www.esiee.fr/",
-    src: "/images/Logo_ESIEE_Paris.png",
+    link: "https://www.esiee.fr/formations/ingenieur/filieres/imac",
+    src: "/images/esiee-paris.png",
     width: 160,
     height: 100,
     time: "2023 - 2026",
@@ -17,7 +17,7 @@ const educations = [
   {
     name: "Nantes University",
     link: "https://www.univ-nantes.fr/",
-    src: "/images/Logo_Nantes-U.png",
+    src: "/images/univ-nantes.png",
     width: 180,
     height: 100,
     time: "2020 - 2023",
@@ -34,6 +34,16 @@ const educations = [
     description: "anywwwhere",
     margin: true,
   },
+  {
+    name: "Le S Shoes & Style",
+    link: "https://www.facebook.com/lesshoesandstyle/",
+    src: "/images/s-shoes.png",
+    width: 160,
+    height: 100,
+    time: "2023 - ?",
+    description: "s_shoes",
+    margin: true,
+  },
 ];
 
 export default function Education() {
@@ -45,7 +55,7 @@ export default function Education() {
         {educations.map((education) => (
           <div
             key={education.name}
-            className="flex flex-col sm:flex-row gap-4 sm:gap-10 "
+            className="flex flex-col sm:flex-row gap-4 sm:gap-10"
           >
             {" "}
             <Link

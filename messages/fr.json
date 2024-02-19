@@ -9,7 +9,7 @@
       "basically": "Je fais de la 3D et du code.",
       "yo": "ans",
       "nationality": "Français",
-      "status": "Etudiant en école d'ingénieurs",
+      "status": "Étudiant en école d'ingénieurs",
       "desc_1": "Salut ! Moi c'est Max.",
       "desc_2": "Je suis passionné par la création digitale.",
       "desc_3": "Entre le développement, la 3D, la vidéo ou en encore l'animation,",
@@ -20,10 +20,11 @@
       "more": "Plus de détails sur mon "
     },
     "education": {
-      "title": "Éducation",
-      "esiee": "Étudiant et ingénieur créatif à l'IMAC.",
+      "title": "Éducation / Experience",
+      "esiee": "Étudiant à l'IMAC pour devenir ingénieur créatif.",
       "nantes": "Classe préparatoire en physique et mathématiques.",
-      "anywwwhere": "Développeur Front-End dans une entreprise Française."
+      "anywwwhere": "Développeur Front-End dans une entreprise Française.",
+      "s_shoes": "Vendeur de chaussures/vêtements en temps de vacances."
     },
     "links": {
       "title": "Liens"
@@ -32,13 +33,17 @@
   "projects": {
     "main_title": {
       "title": "Projets",
-      "description": "Découvrez mes projets !"
+      "description_singular": "projet disponible !",
+      "description_plural": "projets disponibles !",
+      "no_item": "Aucun projet disponible :("
     }
   },
   "blog": {
     "main_title": {
       "title": "Blog",
-      "description": "Parfois j'écris des articles !"
+      "description_singular": "article disponible !",
+      "description_plural": "articles disponibles !",
+      "no_item": "Aucun article disponible pour le moment !"
     }
   }
 }

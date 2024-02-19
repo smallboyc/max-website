@@ -11,14 +11,14 @@ export default function TemplateProject({ data }: any) {
     <section className="mt-10 flex flex-col md:flex-row gap-2 md:gap-10">
       <Link
         href={data.attributes.href}
-        className="w-full md:w-2/5 aspect-video overflow-clip relative"
+        className="w-full md:w-2/5 aspect-video overflow-clip relative rounded-xl shadow-lg"
       >
         <Image
-          src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${data.attributes.image.data.attributes.url}`}
+          src={data.attributes.image.data.attributes.url}
           alt={data.attributes.title}
           layout="fill"
           objectFit="cover"
-          className="rounded-xl w-full h-full hover:opacity-95 duration-200 ease-in"
+          className="w-full h-full hover:opacity-90 duration-200 ease-in "
         />
       </Link>
       <div className="flex flex-col justify-around">

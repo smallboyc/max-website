@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import Header from "@/components/common/Header";
+import Links from "@/components/common/Links";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -38,6 +39,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale} />
           {children}
+          <Links />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -20,10 +20,11 @@
       "more": "more details on my "
     },
     "education": {
-      "title": "Education",
+      "title": "Education / Experience",
       "esiee": "Engineering creative student in IMAC schooling.",
       "nantes": "Preparatory class in physical & math science.",
-      "anywwwhere": "Front-End developer in a French company."
+      "anywwwhere": "Front-End developer in a French company.",
+      "s_shoes": "Shoe/clothing seller during vacation."
     },
     "links": {
       "title": "Links"
@@ -32,13 +33,17 @@
   "projects": {
     "main_title": {
       "title": "Projects",
-      "description": "Discover my projects !"
+      "description_singular": "project available !",
+      "description_plural": "projects available !",
+      "no_item": "No projects available :("
     }
   },
   "blog": {
     "main_title": {
       "title": "Blog",
-      "description": "Sometimes I write articles !"
+      "description_singular": "article available !",
+      "description_plural": "articles available !",
+      "no_item": "No articles available for the moment !"
     }
   }
 }

@@ -29,7 +29,7 @@ const links = [
 export default function Links() {
   const t = useTranslations("home.links");
   return (
-    <section>
+    <section className="mt-20 mb-5 sm:mb-10 sm:mt-24 flex flex-col max-w-container">
       {" "}
       <h1 className="text-2xl font-medium">{t("title")}</h1>{" "}
       <ul className="flex items-center gap-5 mt-5 ">

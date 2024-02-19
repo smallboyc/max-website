@@ -8,7 +8,7 @@ export default function Hero() {
   const t = useTranslations("home.hero");
   return (
     <section className="flex flex-col">
-      <h1 className="font-bold text-2xl">Maxence Dupuis</h1>
+      <h1 className="font-bold text-2xl ">Maxence Dupuis</h1>
       <p className="text-slate-600 sm:text-lg">{t("basically")}</p>
       <div className="flex flex-col sm:flex-row sm:items-center sm:gap-5 mt-2">
         <Image
