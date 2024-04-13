@@ -22,7 +22,7 @@ export default function Hero({ locale }: { locale: string }) {
         <ul className="text-slate-600 sm:text-lg flex flex-col mt-3">
           <li className="flex gap-2 items-center mb-2 hover:text-black">
             <LiaBirthdayCakeSolid className="size-5" />
-            <span>21 {t("yo")}</span>
+            <span>22 {t("yo")}</span>
           </li>
           <li className="flex gap-2 items-center mb-2 hover:text-black ">
             <FaFlag className="size-3 mx-1" />
